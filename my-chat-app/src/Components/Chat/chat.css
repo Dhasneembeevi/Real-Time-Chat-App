@@ -1,0 +1,181 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  position: relative;
+}
+
+.chat-window {
+  background-image: url(../../asserts/chat-wall-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 80.4vh;
+}
+
+.chat-window {
+  height: 600px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.text-input {
+  max-width: 200%;
+}
+.text-input {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.text-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.send-img {
+  width: 25px;
+  height: 25px;
+}
+
+.text-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 1010px;
+}
+
+.send {
+  margin-right: -2140px;
+  background-color: black;
+
+}
+
+.send-img {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.display-message {
+  display: flex;
+  align-items: center;
+}
+
+.chat-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.textmsg {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px;
+  color: black;
+  font-size: larger;
+}
+
+.sender {
+  flex-direction: row-reverse;
+  margin-right: 15px;
+
+}
+
+.sender p {
+  background-color: rgb(243, 195, 243);
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 30%;
+  align-self: flex-end;
+}
+
+.receiver p {
+  background-color: rgb(238, 230, 231);
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+.display-message span {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  .message {
+    height: 87vh;
+  }
+
+  .chat-window {
+    height: calc(100% - 1.5rem);
+  }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .chat-window {
+    height: 600px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-input {
+    max-width: 680px;
+  }
+
+  .send-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-window {
+    height: 85vh;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-input {
+    max-width: 280px;
+  }
+
+  .text-box {
+    font-size: 14px;
+  }
+
+  .send-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+  }
+
+  .send {
+    margin-left: 20px;
+    width: 10px;
+  }
+}
